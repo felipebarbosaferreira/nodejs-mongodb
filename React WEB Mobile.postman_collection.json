@@ -44,7 +44,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\"\n}\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -52,14 +52,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlapireactlocal}}/task/filter/all",
+							"raw": "{{urlapireactlocal}}/task/filter/all/00:19:B9:FB:E2:58",
 							"host": [
 								"{{urlapireactlocal}}"
 							],
 							"path": [
 								"task",
 								"filter",
-								"all"
+								"all",
+								"00:19:B9:FB:E2:58"
 							]
 						}
 					},
@@ -75,7 +76,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\"\n}\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -83,14 +84,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlapireactlocal}}/task/filter/late",
+							"raw": "{{urlapireactlocal}}/task/filter/late/00:19:B9:FB:E2:58",
 							"host": [
 								"{{urlapireactlocal}}"
 							],
 							"path": [
 								"task",
 								"filter",
-								"late"
+								"late",
+								"00:19:B9:FB:E2:58"
 							]
 						}
 					},
@@ -106,7 +108,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\"\n}\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -114,14 +116,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlapireactlocal}}/task/filter/today",
+							"raw": "{{urlapireactlocal}}/task/filter/today/00:19:B9:FB:E2:58",
 							"host": [
 								"{{urlapireactlocal}}"
 							],
 							"path": [
 								"task",
 								"filter",
-								"today"
+								"today",
+								"00:19:B9:FB:E2:58"
 							]
 						}
 					},
@@ -137,7 +140,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\"\n}\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -145,14 +148,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlapireactlocal}}/task/filter/week",
+							"raw": "{{urlapireactlocal}}/task/filter/week/00:19:B9:FB:E2:58",
 							"host": [
 								"{{urlapireactlocal}}"
 							],
 							"path": [
 								"task",
 								"filter",
-								"week"
+								"week",
+								"00:19:B9:FB:E2:58"
 							]
 						}
 					},
@@ -168,7 +172,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\"\n}\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -176,14 +180,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlapireactlocal}}/task/filter/month",
+							"raw": "{{urlapireactlocal}}/task/filter/month/00:19:B9:FB:E2:58",
 							"host": [
 								"{{urlapireactlocal}}"
 							],
 							"path": [
 								"task",
 								"filter",
-								"month"
+								"month",
+								"00:19:B9:FB:E2:58"
 							]
 						}
 					},
@@ -199,7 +204,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\"\n}\n",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -207,14 +212,15 @@
 							}
 						},
 						"url": {
-							"raw": "{{urlapireactlocal}}/task/filter/year",
+							"raw": "{{urlapireactlocal}}/task/filter/year/00:19:B9:FB:E2:58",
 							"host": [
 								"{{urlapireactlocal}}"
 							],
 							"path": [
 								"task",
 								"filter",
-								"year"
+								"year",
+								"00:19:B9:FB:E2:58"
 							]
 						}
 					},
@@ -360,7 +366,7 @@
 	],
 	"variable": [
 		{
-			"id": "544917c5-68ce-409d-9f83-268f83954c30",
+			"id": "82ef92c8-76c5-4f87-9158-00c123493aaa",
 			"key": "urlapireactlocal",
 			"value": "http://127.0.0.1:3000",
 			"type": "string"

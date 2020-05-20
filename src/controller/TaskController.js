@@ -46,7 +46,7 @@ class TaskController {
 
     async all(req, res){
         await TaskModel
-        .find({ macaddress: { '$in': req.body.macaddress } })
+        .find({ macaddress: { '$in': req.params.macaddress } })
         .sort('when')
         .then(response => {
             return res.status(HTTP_STATUS_OK).json(response);
@@ -103,7 +103,7 @@ class TaskController {
         await TaskModel
         .find(
             {'when': {'$lt': currentDate},
-            'macaddress': {'$in': req.body.macaddress},
+            'macaddress': {'$in': req.params.macaddress},
         })
         .sort('when')
         .then(response => {
@@ -117,7 +117,7 @@ class TaskController {
     async today(req, res){
         await TaskModel
         .find({
-            'macaddress': {'$in': req.body.macaddress},
+            'macaddress': {'$in': req.params.macaddress},
             'when': {
                 '$gte': startOfDay(currentDate),
                 '$lte': endOfDay(currentDate),
@@ -135,7 +135,7 @@ class TaskController {
     async week(req, res){
         await TaskModel
         .find({
-            'macaddress': {'$in': req.body.macaddress},
+            'macaddress': {'$in': req.params.macaddress},
             'when': {
                 '$gte': startOfWeek(currentDate),
                 '$lte': endOfWeek(currentDate),
@@ -153,7 +153,7 @@ class TaskController {
     async month(req, res){
         await TaskModel
         .find({
-            'macaddress': {'$in': req.body.macaddress},
+            'macaddress': {'$in': req.params.macaddress},
             'when': {
                 '$gte': startOfMonth(currentDate),
                 '$lte': endOfMonth(currentDate),
@@ -171,7 +171,7 @@ class TaskController {
     async year(req, res){
         await TaskModel
         .find({
-            'macaddress': {'$in': req.body.macaddress},
+            'macaddress': {'$in': req.params.macaddress},
             'when': {
                 '$gte': startOfYear(currentDate),
                 '$lte': endOfYear(currentDate),
