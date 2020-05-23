@@ -104,6 +104,7 @@ class TaskController {
         .find(
             {'when': {'$lt': currentDate},
             'macaddress': {'$in': req.params.macaddress},
+            'done': false,
         })
         .sort('when')
         .then(response => {
