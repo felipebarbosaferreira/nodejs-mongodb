@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "e8a51dc3-7ebd-4424-b8d6-446f63534c2c",
+		"name": "React WEB Mobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Task Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\",\n\t\"type\": 1,\n\t\"title\": \"Comprar Cafe\",\n\t\"description\": \"Em tal mercado esta em promocao\",\n\t\"when\": \"2020-06-20T08:02:13.123456\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/filter/all/00:19:B9:FB:E2:58",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"filter",
+								"all",
+								"00:19:B9:FB:E2:58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Late",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/filter/late/00:19:B9:FB:E2:58",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"filter",
+								"late",
+								"00:19:B9:FB:E2:58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Today",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/filter/today/00:19:B9:FB:E2:58",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"filter",
+								"today",
+								"00:19:B9:FB:E2:58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Week",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/filter/week/00:19:B9:FB:E2:58",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"filter",
+								"week",
+								"00:19:B9:FB:E2:58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Month",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/filter/month/00:19:B9:FB:E2:58",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"filter",
+								"month",
+								"00:19:B9:FB:E2:58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Year",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/filter/year/00:19:B9:FB:E2:58",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"filter",
+								"year",
+								"00:19:B9:FB:E2:58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"macaddress\": \"00:19:B9:FB:E2:58\",\n\t\"type\": 1,\n\t\"title\": \"Procurar Cafe\",\n\t\"description\": \"Pesquisar extra forte na promocao\",\n\t\"when\": \"2020-05-19T12:02:13.123456\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/5ec3cc78c3f27e7d1d88c81b",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"5ec3cc78c3f27e7d1d88c81b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Done",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/5ec5b421e7e9d736feac78fd/true",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"5ec5b421e7e9d736feac78fd",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/5ec3cc78c3f27e7d1d88c81b",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"5ec3cc78c3f27e7d1d88c81b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlapireactlocal}}/task/5ec3cc78c3f27e7d1d88c81b",
+							"host": [
+								"{{urlapireactlocal}}"
+							],
+							"path": [
+								"task",
+								"5ec3cc78c3f27e7d1d88c81b"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0cc0cfa9-1243-4da1-8cae-f73015293764",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6113013c-c055-4838-8668-ba5c0f1be7d6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "82ef92c8-76c5-4f87-9158-00c123493aaa",
+			"key": "urlapireactlocal",
+			"value": "http://127.0.0.1:3000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
