@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto de API desenvolvida com NodeJS e MongoDB para estudo do React",
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
